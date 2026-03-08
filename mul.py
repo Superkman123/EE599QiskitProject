@@ -1,5 +1,7 @@
 from qiskit import QuantumCircuit, QuantumRegister, ClassicalRegister
 from qiskit.circuit.library import RGQFTMultiplier
+from qiskit.tools.monitor import job_monitor
+
 
 q = QuantumRegister(12, 'q') # create a quantum register with 12 qubits q[0:3] for the first number, q[3:6] for the second number, and q[6:12] for the result
 c = ClassicalRegister(6, 'c') # create a classical register to store the measurement results
